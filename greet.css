@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    background: aliceblue;
+}
+
+.row.writename {
+    padding: 20px;
+}
+
+.row.languages {
+    padding: 20px;
+}
+
+.row.btnsection {
+    padding: 20px;
+}
+
+
+.container{border: 1px solid;
+padding: 10px;
+box-shadow: 5px 10px 8px #888888;
+}
