@@ -16,7 +16,20 @@ body {
 }
 
 
-.container{border: 1px solid;
-padding: 10px;
-box-shadow: 5px 10px 8px #888888;
+.container {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    width: 50%;
+    position: absolute;
+    left: 24%;
 }
+
+button.button-primary.enterBtn {
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+

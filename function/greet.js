@@ -1,43 +1,60 @@
-function greetMe (){
-//var name;
-var countNames =0;
+function greetMe(existingNames) {
 
-function countGreetedNames(){
- 
-    
-}
-
-
-
-function enterTheName (chooseLanguage,name){
-
-
-
-    if (chooseLanguage=== "isixhosa")   {
-        name ++
-        return "Molo, "+ name;
+    var countNames = existingNames || [];
+    var letters = /^[A-Za-z]+$/;
+   
+//
+    function enterTheName(chooseLanguage, name) {
+         //strName =  name.trim();
+      //
+        if (chooseLanguage === "isixhosa" && name.trim().match(letters)) {
+            return "Molo, " + name;
+          
+        }
+        else if (chooseLanguage === "english" && name.trim().match(letters)) {
+            return "Hello, " + name;
+        }
+        else if (chooseLanguage === "afrikaans" && name.trim().match(letters)) {
+            return "Hallo, " + name;
+        }
+        else {
+            return("Enter alphabet only");
+           
+        //    alert ("input alphabet only")
         
+           
+        
+        } 
 
     }
 
-        else if (chooseLanguage === "english"){
-            countNames += name;
-            return "Hello, "+ name;
+    function countGreetedNames(strName) {
 
-}
+        if (strName) {
+            //
+            if (!countNames.includes(strName) && strName.trim().match(letters)) {
 
-    else if (chooseLanguage === "afrikaans"){
-        countNames += name;
-        return "Hallo, "+ name;
-        
-     }
+                countNames.push(strName);  //countNames["xxx","dddd","dddd","ccc","ddd"]
 
+            }
 
+            
+        }
+    }
 
-}
-return{
-    enterTheName,
-    countGreetedNames
-    
-}
+    function getCount() {
+        // count the greeted names inside the array
+        return countNames.length;
+    }
+
+    function displayNamesGreeted() {
+        return countNames;
+    }
+
+    return {
+        enterTheName,
+        countGreetedNames,
+        getCount,
+        displayNamesGreeted,
+    }
 }
