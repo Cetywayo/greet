@@ -34,7 +34,7 @@ function sayHi(){
     enterNameElem.value= '';
     countTotalNamesGreetedElement.innerHTML = factoryInstanceGreetName.getCount();
     displayGreetedNamesElement.innerHTML = factoryInstanceGreetName.displayNamesGreeted();
-    console.log(factoryInstanceGreetName.countGreetedNames());
+    //console.log(factoryInstanceGreetName.countGreetedNames());
    // ('.message').fadeOut('fast');
     //$(window).click(function(){$('.messages.status').fadeOut();});
     //console.log (countTheNames);

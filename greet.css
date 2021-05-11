@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .row.writename {
@@ -23,13 +24,33 @@ body {
     width: 50%;
     position: absolute;
     left: 24%;
+    background-color: cornflowerblue;
 }
 
 button.button-primary.enterBtn {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .message {
     margin-bottom: 20px;
 }
 
+input.greetSomeone {
+    height: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button.button-primary {
+    /* margin-bottom: 25px; */
+    width: 20%;
+    height: 37px;
+}
+
+label {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span.label-body {
+    font-size: 25px;
+}
