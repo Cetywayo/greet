@@ -46,13 +46,15 @@ function sayHi(){
     
      countTotalNamesGreetedElement.innerHTML = factoryInstanceGreetName.getCount();
 
-    //  function resetStorage(){
-    //     return  localStorage.clear()
-  
-    //   }
+     function resetStorage(){
+        localStorage.clear()
+        //alert("it's ok")
+        location.reload()
+      }
 
     //factoryInstanceGreetName.resetStorage()
 
     clickGreetElementBn.addEventListener('click',sayHi )
-    //resetBtnElement.addEventListener('click',resetStorage )
+    resetBtnElement.addEventListener('click',resetStorage )
 
+         

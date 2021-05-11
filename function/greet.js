@@ -25,8 +25,8 @@ function greetMe(existingNames) {
     }
 
     function countGreetedNames(strName) {
-        var name= strName.charAt(0).toUpperCase() + strName.slice(1)
-        if (strName) {
+       var name = strName.charAt(0).toUpperCase() + strName.slice(1)
+        if (name) {
             //
             if (!countNames.includes(name) && name.trim().match(letters)) {
 
@@ -47,6 +47,14 @@ function greetMe(existingNames) {
         return countNames;
     }
 
+
+    // function resetStorage(){
+    //     localStorage('names').clear()
+    //     alert("it's ok")
+    //     location.reload()
+            
+  
+    //   }
     
 
     return {
@@ -54,6 +62,7 @@ function greetMe(existingNames) {
         countGreetedNames,
         getCount,
         displayNamesGreeted,
+       // resetStorage
         
     }
 }
