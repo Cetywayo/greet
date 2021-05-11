@@ -25,7 +25,7 @@ function greetMe(existingNames) {
     }
 
     function countGreetedNames(strName) {
-       var name = strName.charAt(0).toUpperCase() + strName.slice(1)
+       var name = strName.charAt(0).toUpperCase() + strName.slice(1).toLowerCase()
         if (name) {
             //
             if (!countNames.includes(name) && name.trim().match(letters)) {
