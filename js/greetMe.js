@@ -4,7 +4,7 @@ var clickGreetElementBn = document.querySelector('.enterBtn')
 var messageElemnt = document.querySelector('.message')
 var countTotalNamesGreetedElement = document.querySelector('.totalGreeted')
 var displayGreetedNamesElement= document.querySelector('.displayNames')
-
+var resetBtnElement = document.querySelector('.reset')
  var creetedNamesStorage;
 
 // geting the names in the local storage
@@ -46,9 +46,13 @@ function sayHi(){
     
      countTotalNamesGreetedElement.innerHTML = factoryInstanceGreetName.getCount();
 
+    //  function resetStorage(){
+    //     return  localStorage.clear()
+  
+    //   }
 
+    //factoryInstanceGreetName.resetStorage()
 
     clickGreetElementBn.addEventListener('click',sayHi )
-
-
+    //resetBtnElement.addEventListener('click',resetStorage )
 

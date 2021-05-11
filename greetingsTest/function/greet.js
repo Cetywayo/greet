@@ -6,31 +6,39 @@ function greetMe(existingNames) {
 //
     function enterTheName(chooseLanguage, name) {
          //strName =  name.trim();
-        // name = name.charAt(0).toUpperCase() + name.slice(1)
+      //
         if (chooseLanguage === "isixhosa" && name.trim().match(letters)) { 
+            name.charAt(0).toUpperCase() + name.slice(1)
+           // const nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1)
             return "Molo, " + name;
           
         }
         else if (chooseLanguage === "english" && name.trim().match(letters)) {
+            name.charAt(0).toUpperCase() + name.slice(1)
             return "Hello, " + name;
         }
         else if (chooseLanguage === "afrikaans" && name.trim().match(letters)) {
+            name.charAt(0).toUpperCase() + name.slice(1)
             return "Hallo, " + name;
         }
         else {
             return("Enter alphabet only");
-
+           
+        //    alert ("input alphabet only")
+        
+           
+        
         } 
 
     }
 
     function countGreetedNames(strName) {
-        var name= strName.charAt(0).toUpperCase() + strName.slice(1)
+
         if (strName) {
             //
-            if (!countNames.includes(name) && name.trim().match(letters)) {
+            if (!countNames.includes(strName) && strName.trim().match(letters)) {
 
-                countNames.push(name);  //countNames["xxx","dddd","dddd","ccc","ddd"]
+                countNames.push(strName);  //countNames["xxx","dddd","dddd","ccc","ddd"]
 
             }
 
@@ -47,13 +55,10 @@ function greetMe(existingNames) {
         return countNames;
     }
 
-    
-
     return {
         enterTheName,
         countGreetedNames,
         getCount,
         displayNamesGreeted,
-        
     }
 }
