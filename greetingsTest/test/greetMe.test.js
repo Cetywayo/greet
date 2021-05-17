@@ -23,14 +23,33 @@ describe('greet the name with the selected language', function(){
             
         });
       
-        // it('should return list of greeted names', function(){
-        //     greetNames = greetMe();
+        it('should return list of greeted names', function(){
+            greetNames = greetMe();
+            greetNames.countGreetedNames('Siwe') 
+            greetNames.countGreetedNames('Musa') 
+            greetNames.countGreetedNames('Oyena') 
+            greetNames.countGreetedNames('Masa') 
+        
 
-        //     greetNames.enterTheName('afrikaans','sino');
-        //     greetNames.enterTheName('afrikaans','Siwe');
-        //     assert.equal([], greetNames.displayNamesGreeted());
+            assert.deepEqual([ 'Siwe', 'Musa', 'Oyena', 'Masa' ] ,greetNames.displayNamesGreeted());
                 
-        //     });
+            });
+
+
+        it('should return the length of the array', function(){
+            greetNames = greetMe();
+            greetNames.countGreetedNames("Siwe") 
+            greetNames.countGreetedNames("Piwe") 
+            greetNames.countGreetedNames("Oyena") 
+            greetNames.countGreetedNames("Masa") 
+            greetNames.countGreetedNames("Onke") 
+            greetNames.countGreetedNames("Onikayo") 
+            greetNames.countGreetedNames("Makhe") 
+            greetNames.countGreetedNames("Ntando") 
+              
+            assert.equal(8, greetNames.getCount());
+                
+            });
   
 });
 

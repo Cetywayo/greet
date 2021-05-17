@@ -44,6 +44,8 @@ button.button-primary {
     /* margin-bottom: 25px; */
     width: 20%;
     height: 37px;
+    cursor:move;
+    opacity: 0.6;
 }
 
 label {

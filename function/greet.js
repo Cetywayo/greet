@@ -5,8 +5,7 @@ function greetMe(existingNames) {
    
 //
     function enterTheName(chooseLanguage, name) {
-         //strName =  name.trim();
-        // name = name.charAt(0).toUpperCase() + name.slice(1)
+         
         if (chooseLanguage === "isixhosa" && name.trim().match(letters)) { 
             return "Molo, " + name;
           
@@ -46,15 +45,6 @@ function greetMe(existingNames) {
     function displayNamesGreeted() {
         return countNames;
     }
-
-
-    // function resetStorage(){
-    //     localStorage('names').clear()
-    //     alert("it's ok")
-    //     location.reload()
-            
-  
-    //   }
     
 
     return {
@@ -62,7 +52,7 @@ function greetMe(existingNames) {
         countGreetedNames,
         getCount,
         displayNamesGreeted,
-       // resetStorage
+     
         
     }
 }
